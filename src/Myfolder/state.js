@@ -1,0 +1,2 @@
+//Component level state - only accessed in the component it is in not in. Can'taccess it from other components etc - f.ex a is-navigiation-open is set to true or false
+//Global or App level state - need to use a state from a components in other components - so share the state among multiple components
