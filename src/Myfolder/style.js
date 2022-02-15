@@ -1,6 +1,5 @@
-import { buildQueries } from '@testing-library/react';
-import React from 'react'
 
+import React from 'react'
 
 function Header(props) {
 
@@ -20,9 +19,6 @@ function Header(props) {
         <p>{paragraphStyles}Hello</p>
       </div>
     </header>
-
-    
-    
   )
 }
 

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import PropsPractice from "./PropsPractice";
+import PropsPractice from "./PropsPractice.js";
 
 import './index.css';
 
@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       <PropsPractice 
-        text="Hello World"
-        moreText="How are you?"/>
+      text="Hello World"
+      moreText="I am a paragraph!"/>
       <div className='container'>
       
       
