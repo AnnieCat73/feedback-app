@@ -7,10 +7,6 @@ function Header(props) {
     backgroundColor: 'green', 
     color: 'red',
   }
-
-  const propsStyle = {//2) could add a prop style like this and add it to below and then link it in app like <Header fontSize="2rem"
-   fontSize: fontSize,
-  }
   return (
     
     <header style={{backgroundColor: 'blue', color: 'red'}}>{/*1)Inline styleing*/}
@@ -45,16 +41,44 @@ function Header({ moreText, bgColor, textColor}) {
     backgroundColor: bgColor, 
     color: textColor,
   }
-  
   return (
     
-    <header style={{backgroundColor: 'blue', color: 'red'}}>{/*1)Inline styleing*/}
+    <header >
       <div className="container">
         
         <p style={paragraphStyles}>props.moreText</p>
       </div>
     </header>
   )
+}
+
+export default Header;
+
+//4 WITH DEFAULT PROPS - nothing in APP - not entirely sure if it's correct!
+
+function Header() {
+  
+  return (
+    
+    <header >
+      <div className="container">
+        
+        <p style={bgColor, textColor}>props.moreText</p>
+      </div>
+    </header>
+  )
+}
+Header.defaultProps = {
+  text: 'Feedback UI',
+  bgColor: 'rgba(0, 0, 0, 0.4)',
+  textColor: '#ff6a95',
+}
+
+
+Header.propTypes = {
+  text: PropTypes.string,
+  bgColor: PropTypes.string,
+  textColor: PropTypes.string,
 }
 
 export default Header;
