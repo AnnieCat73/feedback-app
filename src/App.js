@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header />
       <PropsPractice 
-      text="Hello World"
+      text="I am a PROP!"
       moreText="I am a paragraph!"/>
       <div className='container'>
       
