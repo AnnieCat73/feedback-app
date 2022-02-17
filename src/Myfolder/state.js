@@ -1,7 +1,7 @@
 //Component level state - only accessed in the component it is in not in. Can'taccess it from other components etc - f.ex a is-navigiation-open is set to true or false
 //Global or App level state - need to use a state from a components in other components - so share the state among multiple components
 
-//with { useState } hook
+//with { useState } hook EXAMPLE
 
 import React from 'react'
 import { useState } from 'react';//1) UseState hook
@@ -28,3 +28,41 @@ function FeedbackItem() {
 }
 
 export default FeedbackItem;
+
+//ANOTHER EXAMPLE
+
+/*import { useState } from 'react';
+import Header from "./components/Header";
+import FeedbackItem from "./components/FeedbackItem";
+import './index.css';
+
+function App() {
+  const [feedback, setFeedback] = useState([
+    {
+      id: 1,
+      rating: 10,
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    },
+    {
+      id: 2,
+      rating: 9,
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    },
+  ])
+
+  return (
+    <div>
+      <Header />
+      <div className='container'>
+      
+        <FeedbackItem />
+
+      
+      </div>
+    </div>
+    
+    
+  );
+}
+
+export default App;*/
