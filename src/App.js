@@ -5,33 +5,31 @@
 import './index.css';
 
 
-
-const animals = [
-  {id: 1, type: "cat", color: "white"},
-  {id: 2, type: "dog", color: "brown"},
-  {id: 3, type: "hamster", color: "beige"}
-];
-
+const numbers = [1, 2, 3, 4, 5]
 
 
 
 function App() {
-  const title = "Blogs";
-  {/*}const animalsAll = animals.map((animal, index) => (
-     <li key={index}>{animal.type}{animal.color}</li>
+  const happy = true;
+  const unhappy = true;
 
-  ))*/}
-  const animalsAll = animals.map((animal, index) => {
-    return <li key={index}>{animal.type} and {animal.color}</li>
+  if(happy) return <h1>Happy....</h1>
   
-  })
+ 
   return (
     <div>
-      <h1>{title}</h1>
-      <ul>
-        {animalsAll}
-      </ul>
-     
+      {unhappy ? (
+          <div>
+          <h3>{numbers.length}</h3>
+          <ul>
+            {numbers.map((number, index) => (
+              <li key={index}>{number}</li>
+            ))};
+          </ul>
+        </div>
+      ) : (
+        'yes' 
+      )}
     </div>
     
     
