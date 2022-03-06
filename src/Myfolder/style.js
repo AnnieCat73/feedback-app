@@ -1,7 +1,7 @@
 
-import React from 'react'
+/*import React from 'react'
 
-function Header(props) {
+function Header() {
 
   const paragraphStyles = { //2) styled in a variable passed in below
     backgroundColor: 'green', 
@@ -9,7 +9,7 @@ function Header(props) {
   }
   return (
     
-    <header style={{backgroundColor: 'blue', color: 'red'}}>{/*1)Inline styleing*/}
+    <header style={{backgroundColor: 'blue', color: 'red'}}>{/*1)Inline styleing*
       <div className="container">
         <h2 style={{backgroundColor: 'red', color: 'black'}} >
           {props.text}</h2>
@@ -81,4 +81,4 @@ Header.propTypes = {
   textColor: PropTypes.string,
 }
 
-export default Header;
+export default Header;*/

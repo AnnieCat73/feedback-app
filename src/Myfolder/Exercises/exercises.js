@@ -34,3 +34,34 @@ function App() {
 export default App;
 
 /*//////////////////////////////////////////////////////////*/
+
+import React from 'react'
+import Header from '../style';
+
+function Styling() {
+  const paragraphStyles = {
+    color: 'limegreen',
+    fontSize: '1rem',
+    backgroundColor: 'white'
+
+  }
+  return (
+    <header>
+      <div>
+        <h2 style={{backgroundColor: 'pink', fontSize: '2rem'}}>I am a heading level 2</h2>
+        <p style={{color: 'white'}}>I am a paragraph!</p>
+        <p>I am another paragraph!!!!!!!!!</p>
+        <p style={paragraphStyles}>More paragraphs..........</p>
+        <p style={bgColor}>HAkjsdkfjdsk</p>
+      </div>
+    </header>
+    
+  )
+}
+
+Header.defaultProps = {
+  text: 'Feedback UI',
+  bgColor: 'red',
+  textColor: '#ff6a95'
+}
+export default Styling;

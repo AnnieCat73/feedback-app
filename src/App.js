@@ -4,7 +4,6 @@
 //import FeedbackData from './data/FeedbackData';
 import React from 'react';
 import './index.css';
-import Styling from './Myfolder/Exercises/Styling';
 
 
 
@@ -14,7 +13,7 @@ function App() {
  
   return (
    <div>
-     <Styling />
+     
    </div>
       
    
