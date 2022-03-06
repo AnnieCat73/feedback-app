@@ -14,7 +14,7 @@ function App() {
  
   return (
    <div>
-     <Styling bgColor="pink" textColor="white"/>
+     <Styling />
    </div>
       
    
