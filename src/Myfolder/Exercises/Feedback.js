@@ -15,7 +15,7 @@ function Feedback() {
   const [text, setText] = useState("");
   
   useEffect(() => {
-    console.log(text)
+    console.log(text);
   })
 
 

@@ -33,6 +33,49 @@ function App() {
 }
 export default App;
 
+//State example 
+
+import { useState, useEffect } from 'react';
+//import Header from "./components/Header";
+//import FeedbackList from "./components/FeedbackList";
+//import FeedbackData from './data/FeedbackData';
+import Feedback from './Myfolder/Exercises/Feedback';
+//import React from 'react';
+
+import './index.css';
+
+
+
+
+
+function App() {
+  const [feedback, setFeedback] = useState(6)
+
+  {/**2nd way to set feedback here pointing to below */}
+  const handleFeedback = () => {
+    setFeedback((currentNo) => {
+      return currentNo + 1;
+    })
+  }
+    
+ 
+  return (
+   <div>
+     <Feedback />
+     
+      <h2>Feedback is: {feedback}</h2> 
+      <button onClick={() => setFeedback(currentNo => currentNo + 1)}>Add feedback</button>{/**1 way to set feedback */}
+      <input value={feedback}  />{/**2nd way to set feedback pointing to above */}
+      <button onClick={handleFeedback}>Add feedback</button>
+    </div>
+      
+   
+    
+  );
+}
+
+export default App;
+
 /*//////////////////////////////////////////////////////////*/
 
 import React from 'react'
