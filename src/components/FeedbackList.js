@@ -11,7 +11,7 @@ function FeedbackList({feedback}) { //deconstructed
     <div className="feedback-list">
       {feedback.map((item) => ( 
         <FeedbackItem key={item.id} item={item} />
-      ))};
+      ))}
     </div>
   )
 }
